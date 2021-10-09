@@ -4,7 +4,7 @@ Do you need a simple single-color rectangle image file for your project? This si
 
 ## Usage
 
-Go to [https://axelpale.github.io/make-color-image], set size and color and download the generated picture.
+Go to [axelpale.github.io/make-color-image](https://axelpale.github.io/make-color-image), set size and color and download the generated picture.
 
 ## Development
 
