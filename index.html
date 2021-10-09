@@ -2,7 +2,7 @@
 <html><head>
   <meta charset="utf-8">
 
-  <title>App Template</title>
+  <title>Make Color Image</title>
   <style>
     body { background: white; color: black; }
     a:link { color: #0000EE; }
@@ -11,7 +11,22 @@
     a:active { color: lightblue; }
   </style>
 </head><body>
-  <h1>App Template</h1>
+  <h1>Make Color Image</h1>
+  <div>
+    <input type="number" name="imgwidth" id="imgwidth"
+           min="1" max="16000" step="1" value="800">
+    <label for="imgwidth">Width</label>
+  </div>
+  <div>
+    <input type="number" name="imgheight" id="imgheight"
+           min="1" max="16000" step="1" value="800">
+    <label for="imgheight">Height</label>
+  </div>
+  <div>
+    <input type="color" name="imgcolor" id="imgcolor"
+           value="#999999">
+    <label for="imgcolor">Color</label>
+  </div>
   <div id="container" class="container"></div>
 
   <script src="dist/main.js"></script>
