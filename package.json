@@ -1,0 +1,39 @@
+{
+  "name": "web-app-template",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A project template for single-page apps built with webpack",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack",
+    "build:watch": "webpack watch",
+    "lint": "standard 'src/**/*.js' 'test/**/*.js'",
+    "test": "node test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axelpale/web-app-template.git"
+  },
+  "keywords": [
+    "template",
+    "spa",
+    "html"
+  ],
+  "author": {
+    "name": "John Doe",
+    "email": "john.doe@example.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/axelpale/web-app-template/issues"
+  },
+  "homepage": "https://github.com/axelpale/web-app-template",
+  "devDependencies": {
+    "css-loader": "^6.3.0",
+    "standard": "^16.0.4",
+    "style-loader": "^3.3.0",
+    "tape": "^5.3.1",
+    "webpack": "^5.56.1",
+    "webpack-cli": "^4.8.0"
+  }
+}
