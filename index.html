@@ -9,28 +9,29 @@
     a:visited { color: #551A8B; }
     a:hover { color: lightblue; }
     a:active { color: lightblue; }
+    .form-block { margin-bottom: 0.38rem; }
   </style>
 </head><body>
   <h1>Make Single-Color Image</h1>
-  <div>
+  <div class="form-block">
     <input type="number" name="imgwidth" id="imgwidth"
            min="1" max="16000" step="1" value="800">
     <label for="imgwidth">Width</label>
   </div>
-  <div>
+  <div class="form-block">
     <input type="number" name="imgheight" id="imgheight"
            min="1" max="16000" step="1" value="600">
     <label for="imgheight">Height</label>
   </div>
-  <div>
+  <div class="form-block">
     <input type="color" name="imgcolor" id="imgcolor"
            value="#999999">
     <label for="imgcolor">Color</label>
   </div>
-  <div>
+  <p>
     <button type="button" id="imgsubmit">Create image</button>
-  </div>
-  <p>Save the image below:</p>
+  </p>
+  <p>To save the image to your device, right-click or hold below:</p>
   <canvas width="800" height="600" id="imgcanvas"></canvas>
 
   <p>See <a href="https://github.com/axelpale/make-color-image">axelpale/make-color-image</a> at GitHub</p>
