@@ -1,8 +1,8 @@
 {
-  "name": "web-app-template",
+  "name": "make-color-image",
   "version": "1.0.0",
   "private": true,
-  "description": "A project template for single-page apps built with webpack",
+  "description": "Create single-color images",
   "main": "src/index.js",
   "scripts": {
     "build": "webpack",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/axelpale/web-app-template.git"
+    "url": "git+https://github.com/axelpale/make-color-image.git"
   },
   "keywords": [
     "template",
@@ -20,14 +20,14 @@
     "html"
   ],
   "author": {
-    "name": "John Doe",
-    "email": "john.doe@example.com"
+    "name": "Akseli Palén",
+    "email": "akseli.palen@gmail.com"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/axelpale/web-app-template/issues"
+    "url": "https://github.com/axelpale/make-color-image/issues"
   },
-  "homepage": "https://github.com/axelpale/web-app-template",
+  "homepage": "https://github.com/axelpale/make-color-image",
   "devDependencies": {
     "css-loader": "^6.3.0",
     "standard": "^16.0.4",
