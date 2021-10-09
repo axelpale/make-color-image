@@ -19,7 +19,7 @@
   </div>
   <div>
     <input type="number" name="imgheight" id="imgheight"
-           min="1" max="16000" step="1" value="800">
+           min="1" max="16000" step="1" value="600">
     <label for="imgheight">Height</label>
   </div>
   <div>
@@ -27,6 +27,11 @@
            value="#999999">
     <label for="imgcolor">Color</label>
   </div>
+  <div>
+    <button type="button" id="imgsubmit">Create image</button>
+  </div>
+  <p>Save the image below:</p>
+  <canvas width="800" height="600" id="imgcanvas"></canvas>
   <div id="container" class="container"></div>
 
   <script src="dist/main.js"></script>
