@@ -29,11 +29,6 @@
   },
   "homepage": "https://github.com/axelpale/make-color-image",
   "devDependencies": {
-    "css-loader": "^6.3.0",
-    "standard": "^16.0.4",
-    "style-loader": "^3.3.0",
-    "tape": "^5.3.1",
-    "webpack": "^5.56.1",
-    "webpack-cli": "^4.8.0"
+    "standard": "^16.0.4"
   }
 }
