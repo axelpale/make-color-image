@@ -1,10 +1,12 @@
-# web-app-template
+# make-color-image
 
-This is a template for a [single-page web app](https://en.wikipedia.org/wiki/Single-page_application) built with [webpack](https://webpack.js.org/) and written in [ES6](https://en.wikipedia.org/wiki/ECMAScript) in [StandardJS](https://standardjs.com/) style. The template aims to follow common practices of [Node.js package ecosystem](https://www.npmjs.com/) both in code structure and documentation.
+Do you need a simple single-color rectangle image file for your project? This simple need is surprisingly difficult to fulfil via search engines. Look no further, make-color-image does just that and nothing more.
 
 ## Usage
 
-Either create a new repository via GitHub's *Use this template* feature or copy the files to your existing repository. Write your HTML in `index.html` and your JavaScript under `src/` directory beginning from `src/index.js`. The build bundles your JS files into `dist/main.js`. The bundle is run when you open the `index.html`.
+Go to [https://axelpale.github.io/make-color-image], set size and color and download the generated picture.
+
+## Development
 
 Install build dependencies:
 
@@ -28,7 +30,7 @@ Build is designed for rapid development. Consider following when in production:
 
 ## Contribute
 
-Pull requests and [bug reports](https://github.com/axelpale/web-app-template/issues) are highly appreciated. Please test your contribution with the following scripts:
+Pull requests and [bug reports](https://github.com/axelpale/make-color-image/issues) are highly appreciated. Please test your contribution with the following scripts:
 
 Run test suite:
 
