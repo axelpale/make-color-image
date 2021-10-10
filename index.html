@@ -23,32 +23,36 @@
     }
   </style>
 </head><body>
-  <h1>Make Single-Color Image</h1>
-  <div class="form-block">
-    <input type="number" name="imgwidth" id="imgwidth"
-           min="1" max="16000" step="1" value="800">
-    <label for="imgwidth">Width</label>
-  </div>
-  <div class="form-block">
-    <input type="number" name="imgheight" id="imgheight"
-           min="1" max="16000" step="1" value="600">
-    <label for="imgheight">Height</label>
-  </div>
-  <div class="form-block">
-    <input type="color" name="imgcolor" id="imgcolor"
-           value="#999999">
-    <label for="imgcolor">Color</label>
-  </div>
-  <p>
-    <button type="button" id="imgsubmit">Create image</button>
-  </p>
-  <p>To save the image to your device, right-click or hold below:</p>
+  <h1>Make Color Image</h1>
+  <p>Create a rectangular image filled with single color.</p>
+  <form id="imgform">
+    <div class="form-block">
+      <input type="number" name="imgwidth" id="imgwidth"
+             min="1" max="16000" step="1" value="800">
+      <label for="imgwidth">Width</label>
+    </div>
+    <div class="form-block">
+      <input type="number" name="imgheight" id="imgheight"
+             min="1" max="16000" step="1" value="600">
+      <label for="imgheight">Height</label>
+    </div>
+    <div class="form-block">
+      <input type="color" name="imgcolor" id="imgcolor"
+             value="#999999">
+      <label for="imgcolor">Color</label>
+    </div>
+    <p style="margin-bottom: 2rem">
+      <button type="submit" id="imgsubmit">Create image</button>
+    </p>
+  </form>
+  <p>To save the image below to your device, right-click or hold it:</p>
   <canvas width="800" height="600" id="imgcanvas"></canvas>
 
   <p>Source code <a href="https://github.com/axelpale/make-color-image">axelpale/make-color-image</a> at GitHub</p>
 
   <script>
   (function () {
+    const form = document.querySelector('#imgform')
     const widthInput = document.querySelector('#imgwidth')
     const heightInput = document.querySelector('#imgheight')
     const colorInput = document.querySelector('#imgcolor')
@@ -57,23 +61,33 @@
     const canvas = document.querySelector('#imgcanvas')
     const ctx = canvas.getContext('2d')
 
+    const updateColor = function () {
+      const c = colorInput.value
+      ctx.fillStyle = c
+      ctx.fillRect(0, 0, canvas.width, canvas.height)
+    }
+
     const updateCanvas = function () {
       // Read form
       const w = parseInt(widthInput.value)
       const h = parseInt(heightInput.value)
-      const c = colorInput.value
       // Reset canvas size
       canvas.width = w
       canvas.height = h
-      // Fill canvas with color
-      ctx.fillStyle = c
-      ctx.fillRect(0, 0, w, h)
     }
 
-    submitBtn.addEventListener('click', updateCanvas)
+    form.addEventListener('submit', (ev) => {
+      ev.preventDefault()
+      updateCanvas()
+      updateColor()
+    })
+
+    // Dynamic color update
+    colorInput.addEventListener('change', updateColor)
 
     // Initial reset
     updateCanvas()
+    updateColor()
   })()
   </script>
 </body></html>
